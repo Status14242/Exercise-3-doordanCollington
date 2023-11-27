@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: -6px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.placement {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    margin-top: -100px;
+    display: flex;
+
+}
+
+.door video {
+    width: 100%;
+    /* This will make the video take up the full width of its parent */
+    height: auto;
+    /* This will maintain the aspect ratio of the video */
+    border-radius: 10px;
+    /* This will give the video rounded corners */
+    cursor: pointer;
+}
